@@ -1,7 +1,7 @@
 export const site = {
   name: "Seventeen Recruitment",
   shortName: "17",
-  tagline: "Education Recruitment Specialists",
+  tagline: "Education Specialists",
   description:
     "Connecting exceptional teachers, support staff and school leaders with schools, trusts and nurseries across the UK. We specialise in permanent, supply and contract recruitment for the education sector.",
   url:

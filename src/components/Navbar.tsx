@@ -36,12 +36,12 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 border-b-2 border-brand-gold/80 bg-brand-ink text-white transition-all duration-300",
-        scrolled ? "shadow-lg shadow-black/20" : "shadow-none"
+        "sticky top-0 z-50 border-b border-brand-teal/25 bg-white text-brand-ink transition-all duration-300",
+        scrolled ? "shadow-md shadow-brand-ink/10" : "shadow-none"
       )}
     >
       <div className="container-page flex h-20 items-center justify-between gap-4 md:h-24">
-        <Logo light />
+        <Logo />
 
         <nav
           className="hidden items-center gap-1 lg:flex"
@@ -59,8 +59,8 @@ export function Navbar() {
                 className={cn(
                   "rounded-full px-3.5 py-2 text-sm font-medium transition-colors",
                   active
-                    ? "bg-white text-brand-ink"
-                    : "text-white/75 hover:bg-white/10 hover:text-white"
+                    ? "bg-brand-teal text-white"
+                    : "text-brand-ink/75 hover:bg-brand-mist hover:text-brand-ink"
                 )}
               >
                 {link.label}
@@ -83,15 +83,15 @@ export function Navbar() {
 
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger
-            className="inline-flex size-11 items-center justify-center rounded-xl border border-white/20 bg-white/10 text-white lg:hidden"
+            className="inline-flex size-11 items-center justify-center rounded-xl border border-brand-teal/30 bg-brand-mist text-brand-ink lg:hidden"
             aria-label="Open menu"
           >
             <Menu className="size-5" />
           </SheetTrigger>
-          <SheetContent side="right" className="w-[min(100%,22rem)] bg-brand-ink p-0 text-white">
-            <SheetHeader className="border-b border-white/10 p-5">
+          <SheetContent side="right" className="w-[min(100%,22rem)] bg-white p-0 text-brand-ink">
+            <SheetHeader className="border-b border-border p-5">
               <SheetTitle className="sr-only">Navigation menu</SheetTitle>
-              <Logo light />
+              <Logo />
             </SheetHeader>
             <nav className="flex flex-col gap-1 p-4" aria-label="Mobile">
               {navLinks.map((link) => {
@@ -108,8 +108,8 @@ export function Navbar() {
                         className={cn(
                           "rounded-xl px-4 py-3 text-base font-medium",
                           active
-                            ? "bg-white text-brand-ink"
-                            : "text-white/85 hover:bg-white/10"
+                            ? "bg-brand-teal text-white"
+                            : "text-brand-ink/85 hover:bg-brand-mist"
                         )}
                       />
                     }

@@ -9,16 +9,16 @@
    Change these values to restyle the entire site.
    ========================================================================== */
 :root {
-  --brand-ink: #153a52;
-  --brand-navy: #1e4d6b;
-  --brand-teal: #2a6a8f;
-  --brand-teal-deep: #1e4d6b;
-  --brand-coral: #c56e45;
-  --brand-coral-deep: #a85a36;
-  --brand-gold: #e8b86d;
-  --brand-cream: #faf8f5;
-  --brand-sand: #f5f0ea;
-  --brand-mist: #f7f4ef;
+  --brand-ink: #163e3c;
+  --brand-navy: #215855;
+  --brand-teal: #3e908c;
+  --brand-teal-deep: #2f736f;
+  --brand-coral: #3e908c;
+  --brand-coral-deep: #2f736f;
+  --brand-gold: #7cc3bf;
+  --brand-cream: #f4faf9;
+  --brand-sand: #e4f2f1;
+  --brand-mist: #f7fbfa;
   --brand-paper: #ffffff;
 
   --background: var(--brand-cream);
@@ -32,18 +32,18 @@
   --secondary: var(--brand-ink);
   --secondary-foreground: #ffffff;
   --muted: var(--brand-sand);
-  --muted-foreground: #5c6b78;
-  --accent: #f3ebe3;
+  --muted-foreground: #5a6f6d;
+  --accent: #e7f5f4;
   --accent-foreground: var(--brand-ink);
   --destructive: #b42318;
-  --border: #e2ddd5;
-  --input: #e2ddd5;
+  --border: #d3e4e2;
+  --input: #d3e4e2;
   --ring: var(--brand-teal);
   --chart-1: var(--brand-teal);
   --chart-2: var(--brand-gold);
   --chart-3: var(--brand-navy);
-  --chart-4: #005f92;
-  --chart-5: #4d5e73;
+  --chart-4: #2f736f;
+  --chart-5: #5a6f6d;
   --radius: 1rem;
   --sidebar: var(--brand-paper);
   --sidebar-foreground: var(--brand-ink);
@@ -51,7 +51,7 @@
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: var(--brand-sand);
   --sidebar-accent-foreground: var(--brand-ink);
-  --sidebar-border: #cddaea;
+  --sidebar-border: #d3e4e2;
   --sidebar-ring: var(--brand-teal);
 }
 
@@ -66,13 +66,13 @@
   --primary-foreground: #ffffff;
   --secondary: var(--brand-cream);
   --secondary-foreground: var(--brand-ink);
-  --muted: #0d2748;
-  --muted-foreground: #b7c9dc;
-  --accent: #0e335f;
+  --muted: #1c4a47;
+  --muted-foreground: #c5e4e1;
+  --accent: #1d524e;
   --accent-foreground: var(--brand-cream);
   --destructive: #ff6b5a;
-  --border: #1c3d66;
-  --input: #1c3d66;
+  --border: #2a5e5a;
+  --input: #2a5e5a;
   --ring: var(--brand-teal);
 }
 

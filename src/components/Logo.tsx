@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/data/site";
 import { cn } from "@/lib/utils";
@@ -14,36 +15,21 @@ export function Logo({
   return (
     <Link
       href="/"
-      className={cn("inline-flex items-center gap-3 rounded-md", className)}
+      className={cn("inline-flex shrink-0 rounded-md", className)}
       aria-label={`${site.name} home`}
     >
-      <span
+      <Image
+        src="/logo.png"
+        alt="Seventeen Recruitment — Education Specialists"
+        width={512}
+        height={340}
+        priority
         className={cn(
-          "grid place-items-center rounded-xl bg-brand-coral font-heading font-extrabold text-white",
-          compact ? "size-10 text-base" : "size-12 text-lg",
-          light && "bg-white text-brand-ink",
+          "h-16 w-auto sm:h-[4.75rem]",
+          compact && "h-14 sm:h-16",
+          light && "brightness-0 invert",
         )}
-      >
-        17
-      </span>
-      <span className="leading-tight">
-        <span
-          className={cn(
-            "block font-heading text-base font-bold tracking-tight",
-            light ? "text-white" : "text-brand-ink",
-          )}
-        >
-          Seventeen
-        </span>
-        <span
-          className={cn(
-            "block text-[0.65rem] font-semibold tracking-[0.18em] uppercase",
-            light ? "text-white/70" : "text-muted-foreground",
-          )}
-        >
-          Recruitment
-        </span>
-      </span>
+      />
     </Link>
   );
 }

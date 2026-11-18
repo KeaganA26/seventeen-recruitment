@@ -30,7 +30,7 @@ export function Hero() {
             transition={{ duration: 0.4 }}
             className="mb-4 text-xs font-semibold tracking-[0.22em] text-brand-gold uppercase"
           >
-            Education Recruitment
+            Education Specialists
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 16 }}
