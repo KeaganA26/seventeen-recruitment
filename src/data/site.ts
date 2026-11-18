@@ -4,7 +4,9 @@ export const site = {
   tagline: "Education Recruitment Specialists",
   description:
     "Connecting exceptional teachers, support staff and school leaders with schools, trusts and nurseries across the UK. We specialise in permanent, supply and contract recruitment for the education sector.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://seventeen-recruitment.vercel.app",
+  url:
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    "https://seventeen-recruitment-keagana26s-projects.vercel.app",
   email: "hello@seventeenrecruitment.co.uk",
   hours: "Monday to Friday, 09:00 – 17:30 GMT",
   location: "London, United Kingdom",

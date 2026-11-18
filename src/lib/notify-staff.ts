@@ -1,4 +1,6 @@
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://seventeen-recruitment.vercel.app";
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  "https://seventeen-recruitment-keagana26s-projects.vercel.app";
 const studioUrl = `${siteUrl}/studio/applications`;
 const recipient = process.env.STAFF_NOTIFY_EMAIL || "hello@seventeenrecruitment.co.uk";
 
