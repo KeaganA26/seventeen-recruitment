@@ -45,7 +45,7 @@ export function JobFilters({ value, onChange, resultCount, jobTypes }: JobFilter
               value={value.keyword}
               onChange={(event) => update("keyword", event.target.value)}
               placeholder="Role, brand or skill"
-              className="h-12 rounded-xl bg-white pl-10"
+              className="h-12 rounded-xl bg-white pl-10 dark:bg-brand-paper"
             />
           </div>
         </FilterField>
@@ -141,7 +141,7 @@ function NativeSelect({
 }: ComponentProps<"select">) {
   return (
     <select
-      className="h-12 w-full rounded-xl border border-input bg-white px-3 text-sm outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
+      className="h-12 w-full rounded-xl border border-input bg-white px-3 text-sm text-foreground outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 dark:bg-brand-paper"
       {...props}
     />
   );

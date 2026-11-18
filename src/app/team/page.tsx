@@ -87,7 +87,7 @@ export default function TeamPage() {
                       target="_blank"
                       rel="noreferrer"
                       aria-label={`${member.name} on LinkedIn`}
-                      className="grid size-10 place-items-center rounded-full border border-border text-brand-ink transition-colors hover:bg-brand-ink hover:text-white"
+                      className="grid size-10 place-items-center rounded-full border border-border text-brand-ink transition-colors hover:bg-brand-ink hover:text-white dark:text-foreground"
                     >
                       <svg
                         viewBox="0 0 24 24"

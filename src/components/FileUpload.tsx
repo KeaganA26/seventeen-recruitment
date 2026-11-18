@@ -30,7 +30,7 @@ export function FileUpload({
       <label
         htmlFor={id}
         className={cn(
-          "flex min-h-28 cursor-pointer flex-col items-center justify-center rounded-xl border border-dashed border-input bg-white px-4 py-5 text-center transition-colors hover:border-brand-coral/50 hover:bg-brand-mist",
+          "flex min-h-28 cursor-pointer flex-col items-center justify-center rounded-xl border border-dashed border-input bg-white px-4 py-5 text-center transition-colors hover:border-brand-coral/50 hover:bg-brand-mist dark:bg-brand-paper",
           error && "border-destructive"
         )}
       >
@@ -61,7 +61,7 @@ export function FileUpload({
           </div>
           <button
             type="button"
-            className="inline-flex size-8 items-center justify-center rounded-lg hover:bg-white"
+            className="inline-flex size-8 items-center justify-center rounded-lg hover:bg-white dark:hover:bg-white/10"
             aria-label="Remove file"
             onClick={() => {
               setFile(null);

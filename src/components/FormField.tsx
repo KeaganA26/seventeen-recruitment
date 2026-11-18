@@ -29,7 +29,7 @@ export function TextField({
         id={id}
         aria-invalid={Boolean(error)}
         aria-describedby={error ? `${id}-error` : undefined}
-        className={cn("h-12 rounded-xl bg-white", className)}
+        className={cn("h-12 rounded-xl bg-white dark:bg-brand-paper", className)}
         {...props}
       />
       {error ? (
@@ -59,7 +59,7 @@ export function TextAreaField({
         id={id}
         aria-invalid={Boolean(error)}
         aria-describedby={error ? `${id}-error` : undefined}
-        className={cn("min-h-28 rounded-xl bg-white", className)}
+        className={cn("min-h-28 rounded-xl bg-white dark:bg-brand-paper", className)}
         {...props}
       />
       {error ? (
@@ -89,7 +89,7 @@ export function SelectField({
         id={id}
         aria-invalid={Boolean(error)}
         aria-describedby={error ? `${id}-error` : undefined}
-        className="h-12 w-full rounded-xl border border-input bg-white px-3 text-sm outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
+        className="h-12 w-full rounded-xl border border-input bg-white px-3 text-sm text-foreground outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 dark:bg-brand-paper"
         {...props}
       >
         {children}
